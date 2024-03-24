@@ -1,0 +1,12 @@
+<svg width="458.747314" height="450.363464" viewBox="0 0 458.747 450.363" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient id="paint_linear_2_17_0" x1="321.305145" y1="0.000000" x2="198.729813" y2="529.715759" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#5912F4"/>
+			<stop offset="1.000000" stop-color="#DBBDFF"/>
+		</linearGradient>
+	</defs>
+	<path id="Многоугольник 1" d="M321.305 0L0 344.21L458.747 450.363L321.305 0Z" fill="url(#paint_linear_2_17_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

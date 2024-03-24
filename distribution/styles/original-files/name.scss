@@ -1,0 +1,149 @@
+@import 'style';
+@import 'password';
+
+.main__input {
+
+    &.name,
+    &.surname {
+        width: 100%;
+        margin-bottom: em(20);
+        padding: 5px;
+    }
+}
+
+.main__text {
+    &.name-title {
+        margin-top: em(10);
+        margin-bottom: em(10);
+    }
+
+    &.gender {
+        margin-right: em(10);
+    }
+}
+
+.name__text {
+    margin-bottom: em(5);
+}
+
+.main__parameteres {
+    .dropdown {
+        position: relative;
+        color: #000;
+        font-size: rem(16);
+    }
+}
+
+.dropdown__button {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #7E9BBD;
+    border-radius: 6px;
+    height: 46px;
+    padding: em(13) em(45) em(13) em(20);
+    transition: all .25s ease;
+    cursor: pointer;
+
+    &:focus,
+    .focus-active {
+        outline: none;
+        box-shadow: 0 0 5px 2px rgba(176, 198, 225, .6);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10.4px 6px 0 6px;
+        border-color: #7e9bbd transparent transparent transparent;
+        pointer-events: none;
+    }
+}
+
+.dropdown__list {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(176, 198, 225, .6);
+    overflow: hidden;
+    border-radius: 6px;
+
+    z-index: 2;
+}
+
+.dropdown__list-visible {
+    display: block;
+}
+
+.dropdown__item {
+    padding: em(13) em(20);
+    border: 1px solid #7E9BBD;
+    border-bottom: 0px;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(176, 198, 225, .26);
+    }
+
+    &:first-child {
+        border-radius: 6px 6px 0 0;
+    }
+
+    &:last-child {
+        border-bottom: 1px solid #7E9BBD;
+        border-radius: 0 0 6px 6px;
+    }
+}
+
+.dropdown__input-hidden {
+    display: none;
+}
+
+.red {
+    text-align: justify;
+}
+
+@media(max-width: 540px) {
+    .main__text {
+        &.gender {
+            font-size: rem(14);
+        }
+    }
+
+    .main__info-box {
+        margin: em(10);
+    }
+
+    .main__textarea {
+        &.created__textarea {
+            width: 100%;
+        }
+    }
+
+    .dropdown__item {
+        padding: em(5) em(10);
+    }
+
+    .main__button {
+        &.copy {
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: 440px) {
+    .main__title {
+        font-size: rem(16);
+    }
+}

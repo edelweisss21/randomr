@@ -1,0 +1,36 @@
+@import 'style';
+@import 'password';
+@import 'name';
+
+.main__parameteres {
+
+    &.textarea {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+.main__parameteres-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__desc {
+    &.description {
+        text-align: justify;
+    }
+}
+
+.main__toggle {
+    margin-top: em(10);
+}
+
+.main__button {
+    filter: brightness(100%);
+
+    &.disabled {
+        filter: brightness(70%);
+    }
+}

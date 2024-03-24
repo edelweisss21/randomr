@@ -1,0 +1,41 @@
+@import 'style';
+
+.main__parameteres-box {
+    display: flex;
+    align-items: center;
+    gap: 0 em(5);
+    margin-top: em(5);
+}
+
+.main__color {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 75px;
+    height: 35px;
+    cursor: pointer;
+
+    &::-webkit-color-swatch {
+        border-radius: 7px;
+        border: none;
+    }
+
+    &::-moz-color-swatch {
+        border-radius: 7px;
+        border: none;
+    }
+}
+
+#qrcode {
+    background-color: #fff;
+    padding: em(10);
+    border-radius: 10px;
+}
+
+@media(max-width: 540px) {
+    .main__button {
+        width: 100%;
+    }
+}
